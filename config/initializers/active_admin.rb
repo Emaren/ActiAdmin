@@ -4,7 +4,7 @@ ActiveAdmin.setup do |config|
   # Set the title that is displayed on the main layout
   # for each of the active admin pages.
   #
-  config.site_title = "Acti Admin"
+  config.site_title = "Demo"
 
   # Set the link url for the title. For example, to take
   # users to your main site. Defaults to no link.
@@ -259,4 +259,13 @@ ActiveAdmin.setup do |config|
   # You can enable or disable them for all resources here.
   #
   # config.filters = true
+
+
+
+
+# this is what you needed to add initially to the gemfile for the user
+# registration page to work
+  # class InetInput < Formtastic::Inputs::StringInput
+  # end
+
 end
