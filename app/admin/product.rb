@@ -1,5 +1,5 @@
 ActiveAdmin.register Product do
-  permit_params :name, :description, :price, :product_img, :client_id, :category_id
+  permit_params :name, :description, :price, :product_img, :client_id, :category_id, tag_ids: []
 
   index do
     column "Photo" do |product|
@@ -28,6 +28,7 @@ ActiveAdmin.register Product do
       f.input :price
       f.input :client
       f.input :category
+      f.input :tag_ids, as: :check_boxes, collection: Tag.all.map { |u| [ u.name, u.id ]}, include_blank: false
     end
     f.actions
   end
