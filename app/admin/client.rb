@@ -1,16 +1,12 @@
-ActiveAdmin.register Product do
+ActiveAdmin.register Client do
 
   index do
     column :name
-    column :description
-    column :price
-    actions
   end
 # See permitted parameters documentation:
 # https://github.com/activeadmin/activeadmin/blob/master/docs/2-resource-customization.md#setting-up-strong-parameters
 #
-permit_params :name, :description, :price
-#
+ permit_params :name
 # or
 #
 # permit_params do
