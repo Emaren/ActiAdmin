@@ -28,7 +28,7 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 gem 'devise', '~> 3.5', '>= 3.5.5'
 # Use Unicorn as the app server
 # gem 'unicorn'
-
+gem 'activeadmin', '~> 1.0.0.pre2'
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 
